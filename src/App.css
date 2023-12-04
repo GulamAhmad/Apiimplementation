@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+  
+  & h1 {
+    flex: 1;
+    /* Additional styling for h1 if needed */
+  }
+
+  & .filteritems {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%; /* Take full width */
+    max-width: 1200px; /* Set a max-width as needed */
+    margin-top: 10px; /* Add margin as needed */
+  }
+
+  & .inputbox {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    margin: 10px;
+  }
+}
+@media (max-width:500px){
+  .App{
+    flex-wrap: wrap;
+  }
+}

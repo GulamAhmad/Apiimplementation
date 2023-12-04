@@ -1,0 +1,41 @@
+.card {
+  min-width:300px;
+  border:1px solid;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.content{
+    width:200px;
+    & button{
+      padding:5px 10px;
+      border-radius:5px;
+      border:none;
+      text-transform: capitalize;
+      &:hover{
+        background-color: gray;
+        cursor: pointer;
+      }
+    }
+}
+
+.img {
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  & img {
+    width: 100%;
+    aspect-ratio: 1/2;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 2px white);
+  }
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+}
